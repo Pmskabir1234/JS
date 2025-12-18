@@ -26,4 +26,27 @@ anotherObject.greet = function(){
     
 }
 anotherObject.greet()
+
 // const jsUser2 = new Object() //singleton declaration 
+
+const newObj = Object.assign({}, jsUser,anotherObject)    //create a copy of jsUser object and assign it to newObj 
+
+console.log(newObj);
+
+const another = Object.groupBy([1,2,3,4,5], n => n%2 === 0 ? 'even':'odd')
+console.log(another.odd);
+
+/*
+
+Most Commonly Used:
+
+Object.keys()
+
+Object.values()
+
+Object.entries()
+
+Object.assign()
+
+structuredClone()
+*/
